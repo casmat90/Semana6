@@ -6,6 +6,7 @@
 @import "firma";
 @import "footer";
 
+//@media (max-width: 1366px) {
 
 @mixin baseText($fontSize) {
     font-size: $fontSize;
@@ -50,5 +51,87 @@
 
     p {
         @include baseText(16px)
+    }
+}
+//}
+
+
+@media  (max-width: 828px){
+    .titulo {
+        position: relative;
+        text-align: center;
+        margin-bottom: 25px;
+    
+        img {
+            max-width: 100%;
+            height: 250px;
+        }
+    
+        div {
+            position: absolute;
+            top: 20%;
+            color: white;
+            width: 100%;
+    
+            h1 {
+            font-size: 32px;
+            margin: 15px 30%;
+            }
+    
+            p {
+            margin: 10px 10%;
+            @include baseText(16px);
+            }
+        }
+    }
+    
+    
+    .container {
+        width: 96%;
+        margin: auto;
+    
+        p {
+            @include baseText(16px)
+        }
+    }
+}
+
+@media  (max-width: 424px){
+    .titulo {
+        position: relative;
+        text-align: center;
+        margin-bottom: 25px;
+    
+        img {
+            max-width: 100%;
+            height: 250px;
+        }
+    
+        div {
+            position: absolute;
+            top: 20%;
+            color: white;
+            width: 100%;
+    
+            h1 {
+            font-size: 24px;
+            margin: 15px 33%;
+            }
+    
+            p {
+            margin: 10px 21%;
+            @include baseText(16px);
+            }
+        }
+    }
+    
+    
+    .container {
+        width: 90%;
+        margin: auto;
+    
+        p {
+            @include baseText(13px)
+        }
     }
 }

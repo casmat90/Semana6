@@ -22,7 +22,6 @@ header {
 
     ul {
         display: flex;
-    }
 
         li {
             margin-left: 30px;
@@ -35,3 +34,46 @@ header {
                 }
             }
         }
+    }
+
+
+@media (max-width: 424px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 3%;
+    
+        .logo {
+            width: 30px;
+            height: 30px;
+            border: 2px solid $blue_02;
+            border-radius: 100%;
+            text-align: center;
+            box-shadow: -20px 0 $blue_02;
+            
+            a {
+                font-family: Arial;
+                color: $blue_02;
+                font-weight: bold;
+            }
+        }
+    
+        nav { ul {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+    
+            li {
+                margin-left: 30px;
+                font-family: helvetica;
+            
+    
+                a:hover {
+                        color: $blue_03;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
