@@ -1,0 +1,54 @@
+@import "variables";
+@import "reset";
+@import "globals";
+@import "header";
+@import "container";
+@import "firma";
+@import "footer";
+
+
+@mixin baseText($fontSize) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10;
+    font-family: Arial;
+}
+
+
+/* TITULO */
+
+.titulo {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+
+    img {
+        max-width: 100%;
+    }
+
+    div {
+        position: absolute;
+        top: 20%;
+        color: white;
+        width: 100%;
+
+        h1 {
+        font-size: 44px;
+        margin: 15px 30%;
+        }
+
+        p {
+        margin: 25px 25%;
+        @include baseText(20px);
+        }
+    }
+}
+
+
+.container {
+    width: 68%;
+    margin: auto;
+
+    p {
+        @include baseText(16px)
+    }
+}

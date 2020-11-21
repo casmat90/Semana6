@@ -1,0 +1,363 @@
+/* COLORES */
+/* FONT SIZE */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  max-width: 1366px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  color: #356EAD;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 50px 0 32px;
+  font-family: helvetica;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 8%;
+  font-size: 20px;
+}
+
+header .logo {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #316099;
+  border-radius: 100%;
+  text-align: center;
+  -webkit-box-shadow: -20px 0 #316099;
+          box-shadow: -20px 0 #316099;
+}
+
+header .logo a {
+  font-family: Arial;
+  color: #316099;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header li {
+  margin-left: 30px;
+  font-family: helvetica;
+}
+
+header li a:hover {
+  color: #356EAD;
+  text-decoration: underline;
+}
+
+/* BUSCAR */
+.buscar {
+  text-align: center;
+}
+
+.buscar input {
+  width: 100%;
+  height: 60px;
+  background: #f4f4f4;
+  border: none;
+  border-radius: 15px;
+}
+
+/* POPULAR/ARTICULOS */
+.articulo-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.articulo-1 .contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+}
+
+.articulo-1 .contenido h3 {
+  font-size: 36px;
+  line-height: 46px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #1F3F68;
+}
+
+.articulos-secundarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.articulos-secundarios h3 {
+  font-size: 22px;
+  line-height: 32px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #1F3F68;
+}
+
+.articulos-secundarios figure {
+  max-width: 100%;
+}
+
+.popular .see {
+  display: block;
+  text-align: right;
+  margin-bottom: 30px;
+  color: #356EAD;
+  font-size: 16px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+/* ALL */
+.all-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.all-article img {
+  margin-right: 20px;
+}
+
+.all-article h3 {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: helvetica;
+  font-weight: bold;
+  color: #1F3F68;
+}
+
+.all-article .art_contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.all .more {
+  color: #356EAD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-family: Arial;
+  margin-bottom: 100px;
+}
+
+.firma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 0;
+  color: #1F3F68;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.firma h4 {
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+.firma span {
+  font-family: Arial;
+}
+
+footer {
+  background: #316099;
+  border-radius: 0 200px 0 0;
+}
+
+footer .footer_up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 16%;
+  padding: 90px 0;
+}
+
+footer .footer_up span {
+  font-size: 36px;
+  line-height: 46px;
+  color: white;
+  color: white;
+  font-family: Helvetica;
+  width: 300px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+footer .footer_up p {
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+  font-family: Arial;
+  color: rgba(255, 255, 255, 0.6);
+  width: 460px;
+}
+
+footer .footer_up .hablemos {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .footer_up .hablemos a {
+  color: white;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 20px 80px;
+  background: #5a98d0;
+  border-radius: 10px;
+}
+
+footer .footer_down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 16%;
+  padding: 90px 0;
+}
+
+/* TITULO */
+.titulo {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titulo img {
+  max-width: 100%;
+}
+
+.titulo div {
+  position: absolute;
+  top: 20%;
+  color: white;
+  width: 100%;
+}
+
+.titulo div h1 {
+  font-size: 44px;
+  margin: 15px 30%;
+}
+
+.titulo div p {
+  margin: 25px 25%;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Arial;
+}
+
+.container {
+  width: 68%;
+  margin: auto;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: Arial;
+}
+/*# sourceMappingURL=main.css.map */

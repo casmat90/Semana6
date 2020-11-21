@@ -1,0 +1,21 @@
+@mixin baseText($fontSize) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10;
+}
+
+.firma {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0;
+    color: $blue_01;
+    @include baseText(14px);
+
+    h4 {
+        font-family: helvetica;
+        font-weight: bold;
+    }
+
+    span {
+        font-family: Arial;
+    }
+}

@@ -1,0 +1,52 @@
+@mixin baseText($fontSize) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10;
+    color: white;
+}
+
+footer{
+    background: $blue_02;
+    border-radius: 0 200px 0 0;
+
+    .footer_up {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 16%;
+        padding: 90px 0;
+    
+        span {
+            @include baseText(36px);
+            color: white;
+            font-family: Helvetica;
+            width: 300px;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        p {
+            @include baseText(14px);
+            font-family: Arial;
+            color: rgba(255, 255, 255, 0.6);
+            width: 460px;
+        }
+
+        .hablemos {
+            align-self: center;
+            a {
+                color: white;
+                font-family: Arial;
+                font-size: 16px;
+                padding: 20px 80px;
+                background: rgb(90, 152, 208);
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .footer_down {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 16%;
+        padding: 90px 0;
+    }
+}

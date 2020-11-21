@@ -1,0 +1,94 @@
+@mixin baseText($fontSize) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10;
+    font-family: helvetica;
+    font-weight: bold;
+    color: $blue_01;
+}
+
+/* BUSCAR */
+
+.buscar {
+    text-align: center;
+
+    input {
+        width: 100%;
+        height: 60px;
+        background: rgb(244, 244, 244);
+        border: none;
+        border-radius: 15px;
+    }
+}
+
+/* POPULAR/ARTICULOS */
+
+.articulo-1 {
+    display: flex;
+    margin-bottom: 10px;
+
+    .contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+
+        h3 {
+            @include baseText(36px);
+        }
+    }
+}
+
+.articulos-secundarios {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+
+    h3 {
+        @include baseText(22px)
+    }
+
+    figure {
+        max-width: 100%;
+    }
+}
+
+.popular .see {
+    display: block;
+    text-align: right;
+    margin-bottom: 30px;
+    color: $blue_03;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+/* ALL */
+
+.all-article {
+    display: flex;
+    margin-bottom: 30px;
+
+    img {
+        margin-right: 20px;
+    }
+
+    h3 {
+        @include baseText(18px)
+    }
+
+    .art_contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.all .more {
+    color: $blue_03;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Arial;
+    margin-bottom: 100px;
+}
